@@ -16,8 +16,7 @@ class CategoryFactory extends Factory
         return [
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-            'name' => $this->faker->word(),
-
+            'name' => $this->faker->word,
             'user_id' => User::factory(),
         ];
     }
